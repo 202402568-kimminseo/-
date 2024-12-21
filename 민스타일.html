@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>민스타일(Min Style)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        
+        .header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.8em;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: #444;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .home {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            color: #888;
+        }
+
+        
+        .footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">민스타일(Min Style)</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tops">상의</a></li>
+                <li><a href="#bottoms">하의</a></li>
+                <li><a href="#dresses">원피스</a></li>
+                <li><a href="#outerwear">아우터</a></li>
+                <li><a href="#accessories">액세서리</a></li>
+                <li><a href="#sale">세일</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <h2> 2024 연말 특가 진행 대박 세일 </h2>
+        <p> 문의 사항 minzang2005@naver.com 으로 남겨주세요! </p>
+    </section>
+
+    <section id="tops" class="section tops">
+        <h2>상의</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="세련된 블라우스.jpg" alt="세련된 블라우스">
+                <h3>세련된 블라우스</h3>
+                <p>25,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="캐주얼셔츠.jpg" alt="캐주얼 셔츠">
+                <h3>캐주얼 셔츠</h3>
+                <p>20,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="탱크탑.jpg"  alt="우아한 탱크탑">
+                <h3>우아한 탱크탑</h3>pg
+                <p>18,000원</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottoms" class="section bottoms">
+        <h2>하의</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="청바지.jpg" alt="트렌디한 청바지">
+                <h3>트렌디한 청바지</h3>
+                <p>30,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="치마.jpg" alt="편안한 치마">
+                <h3>편안한 치마</h3>
+                <p>28,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="반바지.jpg" alt="기본 반바지">
+                <h3>멋스러운 반바지</h3>
+                <p>22,000원</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dresses" class="section dresses">
+        <h2>원피스</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="이브닝 드레스.jpg" alt="연말 이브닝 드레스">
+                <h3>우아한 이브닝 드레스</h3>
+                <p>50,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="여름 드레스.jpg" alt="캐주얼 여름 드레스">
+                <h3>캐주얼 여름 드레스</h3>
+                <p>35,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="플로랄 미디 드레스.jpg" alt="플로랄 미디 드레스">
+                <h3>플로랄 미디 드레스</h3>
+                <p>40,000원</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="outerwear" class="section outerwear">
+        <h2>아우터</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="포근한 가디건.jpg" alt="포근한 가디건">
+                <h3>포근한 가디건</h3>
+                <p>32,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="재킷.jpg" alt="스타일리시한 재킷">
+                <h3>스타일리시한 재킷</h3>
+                <p>45,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="코트.jpg" alt="트렌디한 코트">
+                <h3>트렌디한 코트</h3>
+                <p>60,000원</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessories" class="section accessories">
+        <h2>액세서리</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="목걸이.jpg" alt="수제제작 목걸이">
+                <h3>세련된 목걸이</h3>
+                <p>15,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="모자.jpg" alt="겨울꿀템 모자">
+                <h3>스타일리시한 모자</h3>
+                <p>18,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="팔찌.jpg" alt="작년 판매 1위 팔찌">
+                <h3>우아한 팔찌</h3>
+                <p>12,000원</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sale" class="section sale">
+        <h2>세일</h2>
+        <p> 한정 기간 세일 놓치지 마세요!</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="할인원피스.jpg" alt="할인 원피스">
+                <h3>할인 원피스</h3>
+                <p><del>50,000원</del> 35,000원</p>
+            </div>
+            <div class="product-card">
+                <img src="할인셔츠.jpg" alt="세일 셔츠">
+                <h3>세일 셔츠</h3>
+                <p><del>25,000원</del> 18,000원</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p> Make your style with minstyle. </p> 
+    </footer>
+</body>
+</html>
